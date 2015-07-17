@@ -34,9 +34,10 @@ function fn3 () {}
 fixtureArguments(fn1, [1, [2, 3, fn2]], {foo: 'bar'}, [fn3, [4, 5]])
 //=> [fn1, fn2, fn3]
 
-fixtureMultiple([1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
-//=> [fn3, fn2, fn1, fn3]
+fixtureMultiple([1, fn1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
+//=> [fn1, fn3, fn2, fn1, fn3]
 ```
+> **Note** that functions **are not** uniqueified
 
 
 ## Related
