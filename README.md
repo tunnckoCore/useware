@@ -1,6 +1,7 @@
 # [useware][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Accept Arguments object or multiple arguments that can be any value, including deeply nested arrays. Flatten the arguments/values then filter them to be only functions. Useful for `.use` methods.
+> Accept Arguments object or multiple arguments that can be any value, including deeply nested arrays. Flatten the arguments/values then filter them to be only functions.  
+Useful for `.use` methods.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -17,6 +18,24 @@ npm test
 
 ```js
 var useware = require('useware')
+
+function fixtureArguments () {
+  return useware(arguments)
+}
+
+function fixtureMultiple () {
+  return useware.apply(this, arguments)
+}
+
+function fn1 () {}
+function fn2 () {}
+function fn3 () {}
+
+fixtureArguments(fn1, [1, [2, 3, fn2]], {foo: 'bar'}, [fn3, [4, 5]])
+//=> [fn1, fn2, fn3]
+
+fixtureMultiple([1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
+//=> [fn3, fn2, fn1, fn3]
 ```
 
 
