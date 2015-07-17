@@ -39,6 +39,14 @@ fixtureMultiple([1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
 ```
 
 
+## Related
+- [benz](https://github.com/tunnckocore/benz): Compose your control flow with absolute elegance. Support async/await, callbacks, thunks, generators, promises, observables, child… [more](https://github.com/tunnckocore/benz)
+- [composer](https://github.com/jonschlinkert/composer): Boilerplate for creating a node.js application based on Template, vinyl and orchestrator. This consists of… [more](https://github.com/jonschlinkert/composer)
+- [generate](https://github.com/generate/generate): Project generator, for node.js.
+- [vez](https://github.com/tunnckocore/vez): Middleware composition at new level. Ultimate alternative to `ware`, `plugins`, `koa-compose` and `composition` packages. Allows… [more](https://github.com/tunnckocore/vez)
+- [verb](https://github.com/assemble/verb): Documentation generator for GitHub projects. Extremely powerful, easy to use, can generate anything from API… [more](https://github.com/assemble/verb)
+
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/useware/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
