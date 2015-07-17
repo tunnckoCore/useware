@@ -18,5 +18,26 @@
   "devDependencies": {
     "assertit": "^0.1.0"
   },
-  "keywords": []
+  "keywords": [
+    "any",
+    "args",
+    "arguments",
+    "array",
+    "control",
+    "deep",
+    "deeply",
+    "flow",
+    "multiple",
+    "nested",
+    "single",
+    "tool",
+    "type",
+    "typeof",
+    "use",
+    "util",
+    "val",
+    "value",
+    "values",
+    "ware"
+  ]
 }
