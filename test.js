@@ -46,4 +46,11 @@ test('useware:', function () {
     test.deepEqual(actual, expected)
     done()
   })
+  test('should not unique, it allow duplicate function values', function (done) {
+    var actual = fixtureMultiple([1, fn1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
+    var expected = [fn1, fn3, fn2, fn1, fn3]
+
+    test.deepEqual(actual, expected)
+    done()
+  })
 })
