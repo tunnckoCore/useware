@@ -10,8 +10,7 @@
     "test": "standard && node test.js"
   },
   "dependencies": {
-    "arr-filter": "~1.1.0",
-    "arr-flatten": "~1.0.1",
+    "arr-filter-fn": "~1.0.0",
     "is-arguments": "~1.0.1",
     "manage-arguments": "~1.0.0"
   },

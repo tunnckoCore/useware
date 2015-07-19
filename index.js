@@ -7,15 +7,11 @@
 
 'use strict'
 
-var filter = require('arr-filter')
-var flatten = require('arr-flatten')
+var filter = require('arr-filter-fn')
 var isArguments = require('is-arguments')
 var manageArguments = require('manage-arguments')
 
 module.exports = function useware (val) {
   var args = isArguments(val) ? manageArguments(val) : manageArguments(arguments)
-  var middlewares = filter(flatten(args), function (val) {
-    return typeof val === 'function'
-  })
-  return middlewares
+  return filter(args)
 }
