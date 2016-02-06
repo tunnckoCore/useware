@@ -1,5 +1,10 @@
 
 
+## 1.0.2 - 2016-02-06
+- Release v1.0.2 / npm@v1.0.2
+- use `flatten-arguments`
+- update boilerplate and stuff - license year, greenkeeper enable, license link
+
 ## 1.0.1 - 2015-07-19
 - Release v1.0.1 / npm@v1.0.1
 - externalize some logic to `arr-filter-fn` and `arr-filter-function`
