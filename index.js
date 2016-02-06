@@ -8,10 +8,9 @@
 'use strict'
 
 var filter = require('arr-filter-fn')
-var isArguments = require('is-arguments')
-var manageArguments = require('manage-arguments')
+var flatten = require('flatten-arguments')
 
-module.exports = function useware (val) {
-  var args = isArguments(val) ? manageArguments(val) : manageArguments(arguments)
+module.exports = function useware () {
+  var args = flatten.apply(this, arguments)
   return filter(args)
 }
