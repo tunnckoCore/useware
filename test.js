@@ -31,18 +31,16 @@ var arg1 = [1, [2, fn1, {}, ['a', 'b', fn2]]]
 var arg2 = [3, [4, 5], fn4]
 var arg3 = ['foo', ['bar', fn5]]
 
-test('should accept Arguments object directly and return array', function (done) {
-  var actual = fixtureArguments(arg1, fn3, arg2, arg3, fn6)
+test('should accept raw `arguments` object directly and return array', function (done) {
+  var arr = fixtureArguments(arg1, fn3, arg2, arg3, fn6)
   var expected = [fn1, fn2, fn3, fn4, fn5, fn6]
 
-  test.deepEqual(actual, expected)
+  test.deepEqual(arr, expected)
   done()
 })
-test('should accept multiple arguments and return array', function (done) {
+test('should accept multiple arguments', function (done) {
   var actual = fixtureMultiple(arg1, fn6, arg2, fn3, arg3)
-  var expected = [fn1, fn2, fn6, fn4, fn3, fn5]
-
-  test.deepEqual(actual, expected)
+  test.deepEqual(actual, [fn1, fn2, fn6, fn4, fn3, fn5])
   done()
 })
 test('should not unique, it allow duplicate function values', function (done) {
