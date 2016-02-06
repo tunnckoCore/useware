@@ -1,5 +1,9 @@
 
 
+## 1.0.3 - 2016-02-06
+- Release v1.0.2 / npm@v1.0.3
+- fix duplicate code report by codeclimate
+
 ## 1.0.2 - 2016-02-06
 - Release v1.0.2 / npm@v1.0.2
 - use `flatten-arguments`

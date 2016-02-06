@@ -1,6 +1,6 @@
 {
   "name": "useware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Accept Arguments object or multiple arguments that can be any value, including deeply nested arrays. Flatten the arguments/values then filter them to be only functions. Useful for `.use` methods.",
   "repository": "tunnckoCore/useware",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
