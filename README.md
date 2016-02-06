@@ -17,7 +17,7 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var useware = require('useware')
+const useware = require('useware')
 
 function fixtureArguments () {
   return useware(arguments)
@@ -46,6 +46,7 @@ fixtureMultiple([1, fn1, [2, [fn3, [4, 5]], fn2]], fn1, [6, [fn3, 7, 'a']])
 - [generate](https://github.com/generate/generate): Project generator, for node.js.
 - [vez](https://github.com/tunnckocore/vez): Middleware composition at new level. Ultimate alternative to `ware`, `plugins`, `koa-compose` and `composition` packages. Allows… [more](https://github.com/tunnckocore/vez)
 - [verb](https://github.com/assemble/verb): Documentation generator for GitHub projects. Extremely powerful, easy to use, can generate anything from API… [more](https://github.com/assemble/verb)
+- [useware-context](https://www.npmjs.com/package/useware-context): Much like `useware` but with the ability to bind given context to each function.
 
 
 ## Contributing
@@ -61,7 +62,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-url]: https://www.npmjs.com/package/useware
 [npmjs-img]: https://img.shields.io/npm/v/useware.svg?label=useware
 
-[license-url]: https://github.com/tunnckoCore/useware/blob/master/LICENSE.md
+[license-url]: https://github.com/tunnckoCore/useware/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
 
